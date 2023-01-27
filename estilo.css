@@ -1,0 +1,410 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Exo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root{
+/*Paleta de Cores*/
+--cor_contorno: rgba(217, 20, 164, 1);
+--cor_titulo_box: rgba(34, 5, 64, 1);
+--cor_background_box: rgba(18, 3, 115, 1);
+--cor_titulo: rgba(72, 46, 242, 1);
+--cor_button: rgba(15, 10, 166, 1);
+--cor_background_product: rgb(86, 4, 88);
+
+/*Paleta de Fontes*/
+--font_titulo: 'Unbounded', 'Arial', sans-serif;
+--font_sub-titulo: 'Bebas Neue', 'Arial', sans-serif;
+--font_texto: 'Playfair Display', 'Arial', sans-serif;
+--font_texto_box: 'Exo', 'Arial', sans-serif;
+
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    width: auto;
+    background-color: var(--cor_background_box);
+    box-shadow: inset 0px 8px 25px 0px rgba(0,0,0,0.75);
+}
+
+header{
+    background-color: var(--cor_titulo_box);
+    padding: 30px;
+    box-shadow: 0px 8px 25px 0px rgba(0,0,0,0.75);
+}
+
+picture{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+picture img#icone{
+    padding: 10px;
+    box-shadow: 0px 2px 25px 0px rgba(217, 20, 164, 0.649);
+    max-width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    background-color: var(--cor_contorno);
+}
+
+picture h1{
+    color: white;
+    font-family: var(--font_titulo);
+    padding-top: 15px;
+}
+
+nav img{
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    max-width: 50%;
+}
+
+nav{
+    display: flex;
+    justify-content: center; 
+    margin: auto;
+}
+
+
+main picture{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.container .total{
+    max-width: 840px;
+    /*
+    display: flex;
+    */
+    display: flex;
+}
+
+main div{
+    background-color: var(--cor_background_product);
+    padding: 10px;
+    text-indent: 10px;
+    margin: 0px;
+    max-width: auto;
+
+}
+
+.container{
+    width: auto;
+    margin: 0px;
+}
+
+.primeiro{
+    margin-left: 5px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    font-family: var(--font_texto_box);
+    font-weight: 300;
+    background-color: var(--cor_background_box);
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    display: inline-block;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 0px rgba(217,20,164,1);
+}
+
+.title_price{
+    text-align: center;
+}
+
+.price_produto{
+    border-color: black;
+    font-family: var(--font_titulo);
+    font-weight: lighter;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 270px;
+}
+
+.price_produto:hover{
+    background-color: var(--cor_background_product);
+    text-decoration-color: black;
+    transition-duration: 0.3s;
+}
+
+.produto{
+    margin: auto;
+    width: auto;
+    padding: auto;
+    display: inline-block;
+    justify-content: center;
+}
+
+.produto_picture{
+    display: flex;
+    justify-content: center;
+    max-width: 200px;
+    margin: auto;
+
+}
+
+.produto_picture:hover{
+    background-color: rgba(87, 4, 88, 0.463);
+    transition-duration: 0.3s;
+    border-radius: 10px;
+}
+
+.produtos_box{
+    margin: 15px;
+    margin-bottom: 30px;
+    width: auto;
+    height: auto;
+    font-family: var(--font_texto_box);
+    font-weight: 300;
+    background-color: var(--cor_background_box);
+    color: white;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    font-size: 25px;
+    display: inline-block;
+    justify-content: center;
+    box-shadow: 1px 1px 10px 0px rgba(217,20,164,1);
+}
+
+footer{
+    background-color: var(--cor_titulo_box);
+    width: auto;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+footer > div img{
+    padding: 10px;
+    max-width: 100px;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+#icone_footer{
+    padding: 10px;
+    max-width: 100px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+div > picture h1{
+    color: var(--cor_titulo);
+    font-family: var(--font_titulo);
+    padding-top: 15px;
+}
+
+footer > div picture{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+hr{
+    border-color: var(--cor_titulo);
+}
+
+footer > div p{
+    display: flex;
+    justify-content: center;
+    color: var(--cor_titulo);
+    font-family: var(--font_titulo);
+}
+
+/*Pesquisa*/
+
+.topnav input[type=text] {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    border: none;
+    margin: auto;
+    font-size: 17px;
+    background-color: transparent;
+    box-shadow: 0px 0px 30px 1px rgba(217, 20, 164, 0.536);
+    color: white;
+    border-radius: 10px;
+  }
+
+ /*Sacola*/
+
+.container_sacola{
+    margin: auto;
+    width: auto;
+    max-width: 1300px;
+    padding: 100px;
+
+}
+
+.list_product{
+    border-color: rgba(217, 20, 164, 0.438);
+    box-shadow: 1px 1px 10px 0px rgba(217,20,164,1);
+    border-style: solid;
+    border-radius: 30px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 40px;
+}
+
+.list_product > p{
+    font-family: var(--font_texto_box);
+    color: white;
+    text-align: center;
+    margin: auto;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    font-size: 40px;
+}
+
+.box_price{
+    border-color: rgba(217, 20, 164, 0.438);
+    box-shadow: 1px 1px 10px 0px rgba(217,20,164,1);
+    border-style: solid;
+    border-radius: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.box_price > p{
+    color: white;
+    font-family: var(--font_texto_box);
+    text-align: left;
+    font-size: 30px;
+}
+
+.button{
+    display: block;
+    border-color: black;
+    border-style: solid;
+    border-radius: 20px;
+    margin: auto;
+    padding-right: 20px;
+    width: auto;
+    text-align: center;
+    background-color: black;
+}
+
+.link_button{
+    text-decoration: none;
+    font-family: var(--font_texto_box);
+    color: white;
+}
+
+.button:hover{
+    background-color: rgba(161, 30, 163, 0.463);
+    border-color: rgba(161, 30, 163, 0.463);
+    transition-duration: 0.3s;
+
+}
+
+/*Profile*/
+
+#icon_profile{
+    max-width: 250px;
+    width: auto;
+    margin: auto;
+    display: inline-flex;
+}
+
+.container > p{
+    text-align: center;
+    font-family: var(--font_titulo);
+    color: white;
+    margin: auto;
+    width: auto;
+}
+
+.campo{
+    display: flex;
+    justify-content: center;
+    height: 20px;
+    margin: auto;
+    width: auto;
+}
+
+.campo input[type="text"]{
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    box-shadow: 0px 0px 30px 1px rgba(217, 20, 164, 0.536);
+}
+
+.campo input[type="email"]{
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    box-shadow: 0px 0px 30px 1px rgba(217, 20, 164, 0.536);
+}
+
+.campo input[type="password"]{
+    background-color: transparent;
+    border-radius: 10px;
+    color: white;
+    width: 200px;
+    box-shadow: 0px 0px 30px 1px rgba(217, 20, 164, 0.536);
+}
+
+.button_profile{
+    max-width: 300px;
+    margin: auto;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button_confirmar{
+    border-style: solid;
+    border-color: black;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.button_cancelar{
+    border-style: solid;
+    border-color: rgb(128, 128, 128);
+    border-radius: 20px;
+    background-color: rgb(128, 128, 128);
+}
+
+.button_confirmar p{
+    color: white;
+    font-family: var(--font_titulo);
+    text-align: left;
+    margin-right: 10px;
+}
+
+.button_cancelar p{
+    color: white;
+    font-family: var(--font_titulo);
+    margin-right: 10px;
+}
+
+.button_confirmar:hover, .button_cancelar:hover{
+    background-color: rgb(131, 25, 134);
+    border-color: rgb(131, 25, 134);
+}
+
+a{
+    text-decoration: none;
+}
